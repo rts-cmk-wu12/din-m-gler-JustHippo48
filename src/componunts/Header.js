@@ -3,6 +3,7 @@ import Logo from "@/images/logo.png"
 import Phone from "@/images/phone.png"
 import Pplane from "@/images/pplane.png"
 import User from "@/images/user.png"
+import Link from "next/link";
 
 export default function Header() {
     return (
@@ -21,7 +22,9 @@ export default function Header() {
             </div>
             <div className="flex justify-evenly items-center bg-white h-[4rem]">
                 <a href="">
-                    <Image src={Logo} alt="logo" width="250" height="250"></Image>
+                    <Link href={"/app/page"}>
+                        <Image src={Logo} alt="logo" width="250" height="250"></Image>
+                    </Link>
                 </a>
                 <nav>
                     <ul className="flex justify-evenly w-[30rem]">
